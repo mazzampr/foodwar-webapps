@@ -1,0 +1,15 @@
+.skip-link {
+    padding: 10px;
+    background-color: $pinky;
+    color: black;
+    position: absolute;
+    top: -100%;
+    left: 10px;
+    text-decoration: none;
+    font-weight: map-get($font-weights, medium);
+    z-index: 99;
+    
+    &:focus {
+        top: 40px;
+    }
+}

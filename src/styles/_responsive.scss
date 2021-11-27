@@ -1,0 +1,51 @@
+@media screen and (max-width: 375px) {
+    nav {
+        padding: 15px 10px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list {
+        display: flex;
+        position: fixed;
+        right: 0;
+        flex-direction: column;
+        background-color: #F4F0FA;  
+        top: 80px;
+        width: 80%;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 99;
+        transform: translateX(100%);
+        transition: all 1s;
+        li {
+            a {
+                font-size: 32px;
+            }
+        }
+    }
+    .slide {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .hamburger {
+        display: none !important;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .hero {
+        min-width: 1000px;
+        max-width: 90%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+}
+

@@ -1,0 +1,30 @@
+.hero {
+    background-image: url('./images/heros/hero-image_4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 350px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.4;
+        border-radius: 10px;
+    }
+    .title {
+        text-align: center;
+        transform: translateY(100px);
+        color: #fff;
+        font-weight: map-get($font-weights, bold) !important;
+        position: relative;
+        z-index: 9;
+        .bg-text {
+            background-color: $yellow;
+        }
+    }
+}
