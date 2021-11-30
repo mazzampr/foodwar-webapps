@@ -9,94 +9,16 @@
 
 <body>
     <a href="#mainContent" class="skip-link">Skip to content</a>
-    <header>
-        <nav id="appBar">
-            <div class="logo">
-                <img src="./images/logo.png" alt="Foodwar">
-            </div>
-            <button class="hamburger" tabindex="0">
-                <ul>
-                    <li class="line"></li>
-                    <li class="line"></li>
-                    <li class="line"></li>
-                </ul>
-            </button>
-            <ul class="list">
-                <li><a href="#appBar">Home</a></li>
-                <li><a href="#">Favorite</a></li>
-                <li><a href="https://www.linkedin.com/in/mazzampr/" target="_blank">About Us</a></li>
-            </ul>
-        </nav>
-
+    <header class="header">
+        <app-bar></app-bar>
+        <burger-menu></burger-menu>
+        <nav-bar></nav-bar>
     </header>
-    <div class="hero">
-        <h1 class="title">Find Your <span class="bg-text">Favorite</span> Food<br>From the Best Restaurant</h1>
-    </div>
+    
+    <hero-element></hero-element>
     <main class="main" id="mainContent">
-        <section class="top__menus">
-            <div class="info__content">
-                <h2 class="title__content" tabindex="0">
-                    BEST MENUS
-                </h2>
-                <p class="description__content" tabindex="0">
-                    Best menus in this month
-                </p>
-            </div>
-            <div class="list__menu">
-                <div class="list__item" tabindex="0">
-                    <img src="https:\/\/www.themealdb.com\/images\/media\/meals\/nv5lf31628771380.jpg" width="250px"
-                        alt="Pindang Goreng">
-                    <h3 class="title__item" tabindex="0">Pindang Goreng</h3>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                <div class="list__item" tabindex="0">
-                    <img src="https:\/\/www.themealdb.com\/images\/media\/meals\/xqusqy1487348868.jpg" width="250px"
-                        alt="Kentucky">
-                    <h3 class="title__item" tabindex="0">Kentucky</h3>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                <div class="list__item" tabindex="0">
-                    <img src="https:\/\/www.themealdb.com\/images\/media\/meals\/ctg8jd1585563097.jpg" width="250px"
-                        alt="Moussaka">
-                    <h3 class="title__item" tabindex="0">Moussaka</h3>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                <div class="list__item" tabindex="0">
-                    <img src="https:\/\/www.themealdb.com\/images\/media\/meals\/sqpqtp1515365614.jpg" width="250px"
-                        alt="Red Peas Soup">
-                    <h3 class="title__item" tabindex="0">Red Peas Soup</h3>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-        <section class="banner__promo">
-            <img src="./images/banner.png" alt="">
-        </section>
+        <top-menus></top-menus>
+        <banner-promo></banner-promo>
         <section class="top__resto">
             <div class="info__content">
                 <h2 class="title__content" tabindex="0">
@@ -110,7 +32,7 @@
             </div>
         </section>
     </main>
-    <button class="btn-top"><i class="fas fa-arrow-up arrow"></i></button>
+    <button-top></button-top>
     <footer class="footer">
         <p>Copyright © 2021 - Foodwar Apps</p>
         <p>Moh Azzam P - FrontEnd Web Developer</p>

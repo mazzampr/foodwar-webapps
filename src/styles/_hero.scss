@@ -16,15 +16,35 @@
         opacity: 0.4;
         border-radius: 10px;
     }
-    .title {
-        text-align: center;
-        transform: translateY(100px);
-        color: #fff;
-        font-weight: map-get($font-weights, bold) !important;
+    .hero-text {
         position: relative;
         z-index: 9;
-        .bg-text {
+        text-align: center;
+        padding: 80px 0 0 0;
+        .title {
+            // transform: translateY(100px);
+            color: #fff;
+            font-weight: map-get($font-weights, bold) !important;
+            .bg-text {
+                background-color: $yellow;
+            }
+        }
+        .btn-order {
+            justify-content: center;
+            margin-top: 5em;
             background-color: $yellow;
+            border: none;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: map-get($font-weights, medium);
+            color: $primary-text;
+            &:hover {
+                cursor: pointer;
+                background-color: $yellowdark;
+            }
         }
     }
+    
 }

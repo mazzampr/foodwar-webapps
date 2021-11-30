@@ -1,10 +1,13 @@
 @media screen and (max-width: 375px) {
-    nav {
+    header {
         padding: 15px 10px !important;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .header {
+        grid-template-columns: 1fr auto;
+    }
     .list {
         display: flex;
         position: fixed;
@@ -30,7 +33,7 @@
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .hamburger {
         display: none !important;
     }
