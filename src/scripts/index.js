@@ -7,6 +7,7 @@ import './views/component/hero-element';
 import './views/component/top-menu';
 import './views/component/banner-promo';
 import './views/component/btn-top';
+import './views/component/footer';
 import '../styles/main.scss';
 import './list-resto.js';
 import App from './views/app';
