@@ -76,7 +76,7 @@ top-menus {
         flex-wrap: wrap;
         justify-content: space-evenly;
         .resto__item {
-            width: 250px;
+            width: 300px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             margin: 0 10px 20px 0;
             display: grid;
@@ -90,7 +90,17 @@ top-menus {
             }
             .title__resto {
                 text-align: center;
-                color: $primary-text;
+                a {
+                    display: block;
+                    font-size: 20px;
+                    color: $primary-text;
+                    text-decoration: none;
+                    min-width: 44px;
+                    min-height: 44px;
+                    &:hover {
+                        color: $yellowdark;
+                    }
+                }
             }
             .description {
                 text-align: center;

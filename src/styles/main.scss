@@ -8,6 +8,8 @@
 @import 'footer';
 @import 'btn-top';
 @import 'skip-link';
+@import 'detail';
+
 
 html {
     scroll-behavior: smooth;
@@ -40,3 +42,64 @@ body {
     background: $yellow;
 }
 
+.breadcrumb {
+    margin: 20px 0 20px 40px;
+    li {
+        display: inline-block;
+        font-size: 20px;
+        margin-right: 1em;
+        color: $secondary-text;
+        a {
+            padding: 10px 0;
+            color: $yellow;
+            text-decoration: none;
+            font-weight: map-get($font-weights, medium);
+            &:hover {
+                color: $yellowdark;
+            }
+        }
+    }
+}
+
+.card {
+    box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+// Loader
+.loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.9;
+    z-index: 100;
+}
+.loader {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 4px solid $yellow;
+    animation: loader 2s infinite ease;
+}
+.loader-inner {
+    vertical-align: top;
+    width: 100%;
+    display: inline-block;
+    background-color: $yellow;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+.offline-mode {
+    text-align: center;
+    padding: 160px 0;
+    .img {
+        width: 150px;
+    }
+}

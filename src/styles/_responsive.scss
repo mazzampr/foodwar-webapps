@@ -2,6 +2,10 @@
     header {
         padding: 15px 10px !important;
     }
+    .btn-order {
+        margin-top: 2em !important;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -27,9 +31,18 @@
                 font-size: 32px;
             }
         }
+        
     }
     .slide {
         transform: translateX(0);
+    }
+    .breadcrumb {
+        margin-left: 20px;
+    }
+    .form-review {
+        input, textarea {
+            width: 100% !important;
+        }
     }
 }
 
@@ -37,11 +50,18 @@
     .hamburger {
         display: none !important;
     }
+    .detail-header {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    .menu-container {
+        grid-template-columns: auto auto !important;
+    }
     
 }
 @media screen and (min-width: 1200px) {
     main {
-        max-width: 90%;
+        max-width: 95%;
         margin: 0 auto;
     }
     .hero {

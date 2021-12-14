@@ -1,10 +1,11 @@
+/* eslint-disable linebreak-style */
 class HamburgerMenu extends HTMLElement {
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this.innerHTML = `
+  render() {
+    this.innerHTML = `
             <button class="hamburger" tabindex="0">
                 <ul>
                     <li class="line"></li>
@@ -13,7 +14,7 @@ class HamburgerMenu extends HTMLElement {
                 </ul>
             </button>
         `;
-    }
+  }
 }
 
 customElements.define('burger-menu', HamburgerMenu);

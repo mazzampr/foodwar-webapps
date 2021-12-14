@@ -1,0 +1,187 @@
+// Detail-content
+.detail-content {
+    padding: 10px 40px;
+    .detail-header {
+        display: grid;
+        row-gap: 30px;
+        .image-resto {
+            img {
+            width: 100%;
+            height: auto;
+            }
+        }
+        .branding {
+            h1 {
+                color: $primary-text;
+            }
+            p {
+            font-size: 20px;
+            margin-top: 16px;
+            }
+            .line-border {
+                margin: 30px 0;
+                width: 100%;
+                height: 4px;
+                background-color: $secondary-text;
+            }
+            .categories {
+                margin-top: 20px;
+                .btn {
+                    margin: 10px 0;
+                    padding: 10px 15px;
+                    color: #fff;
+                    background-color: $yellow;
+                    border: none;
+                    border-radius: 10px;
+                    font-weight: map-get($font-weights, medium);
+                    font-size: 18px;
+                    &:hover {
+                        background-color: $yellowdark;
+                    }
+                }
+            }
+        }
+    }
+    .detail-body {
+        margin-top: 20px;
+        h2 {
+            color: $primary-text;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .description {
+            p {
+                font-size: 20px;
+                text-align: justify;
+                line-height: 28px;
+                letter-spacing: 1.5px;
+            }
+        }
+        .menus {
+            margin-top: 10px;
+            .menu-container {
+                margin-top: 10px;
+                display: grid;
+                grid-template-columns: auto;
+                gap: 20px;
+                font-size: 20px;
+                .food-list, .drink-list {
+                    margin-left: 20px;
+                }
+                ul {
+                    list-style: square;
+                }
+                li {
+                    margin-top: 10px ;
+                }
+                h3 {
+                    color: $yellowdark;
+                }
+            }
+        }
+        #customerReview {
+            margin: 24px 0;
+            color: $primary-text;
+            span {
+                color: $yellowdark;
+            }
+            .list-review {
+                margin-top: 10px;
+                .item-review {
+                    margin-top: 24px;
+                    #date {
+                        color: $yellowdark;
+                        font-weight: map-get($font-weights, medium);
+                    }
+                    #commentReview {
+                        font-size: 18px;
+                        word-wrap: break-word;
+                    }
+                    hr {
+                        margin: 10px 0;
+                    }
+                }
+            }
+            .form-review {
+                margin-top: 20px;
+                .user-input {
+                    margin-top: 10px;
+                    display: grid;
+                    row-gap: 10px;
+                    font-weight: map-get($font-weights, medium);
+                    input {
+                        height: 44px;
+                    }
+                }
+                .review-input {
+                    margin: 10px 0;
+                    display: grid;
+                    row-gap: 10px;
+                    font-weight: map-get($font-weights, medium);
+                    textarea {
+                        min-height: 70px;
+                    }
+                }
+                #submitReview {
+                    margin: 20px 0;
+                    padding: 10px 20px;
+                    min-width: 44px;
+                    min-height: 44px;
+                    background-color: $pinkydark;
+                    color: black;
+                    border: none;
+                    font-weight: map-get($font-weights, medium);
+                    &:hover {
+                        background-color: $pinky;
+                        cursor: pointer;
+                    }
+                }
+                input, textarea {
+                    width: 50%;
+                    padding: 10px;
+                    background-color: #fdd9d4;
+                    border: none;
+                    border-radius: 5px;
+                    font-weight: map-get($font-weights, medium);
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(180deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
+@keyframes loader-inner {
+    0% {
+      height: 0%;
+    }
+    25% {
+      height: 0%;
+    }
+    50% {
+      height: 100%;
+    }
+    75% {
+      height: 100%;
+    }
+    100% {
+      height: 0%;
+    }
+}
