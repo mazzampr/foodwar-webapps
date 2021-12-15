@@ -29,6 +29,9 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    min-height: 80vh;
+}
 // line-bottom
 .line-bottom {
     
@@ -98,7 +101,7 @@ body {
 
 .offline-mode {
     text-align: center;
-    padding: 160px 0;
+    padding-top: 160px;
     .img {
         width: 150px;
     }
