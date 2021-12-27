@@ -5,6 +5,9 @@ const CONFIG = {
   BASE_IMAGE_MEDIUM: 'https://restaurant-api.dicoding.dev/images/medium/',
   BASE_IMAGE_LARGE: 'https://restaurant-api.dicoding.dev/images/large/',
   CACHE_NAME: new Date().toISOString(),
+  DATABASE_NAME: 'foodwar-apps-database',
+  OBJECT_STORE_NAME: 'restaurants',
+  DATABASE_VERSION: 1,
 };
 
 export default CONFIG;

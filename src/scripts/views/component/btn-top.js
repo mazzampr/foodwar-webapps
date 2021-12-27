@@ -7,7 +7,7 @@ class BtnTop extends HTMLElement {
 
   render() {
     this.innerHTML = `
-            <button class="btn-top" aria-label="Scroll Top"><i class="fas fa-arrow-up arrow"></i></button>
+            <button class="btn btn-top" aria-label="Scroll Top"><i class="fas fa-arrow-up arrow"></i></button>
         `;
     window.addEventListener('scroll', this.scrollFuntion);
     document.querySelector('.btn-top').addEventListener('click', this.topScroll);

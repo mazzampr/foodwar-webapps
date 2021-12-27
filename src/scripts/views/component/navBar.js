@@ -9,7 +9,7 @@ class NavBar extends HTMLElement {
             <ul id="navigationDrawer" class="list">
                 <li><a href="#/home">Home</a></li>
                 <li><a href="#/favorite">Favorite</a></li>
-                <li><a href="https://www.linkedin.com/in/mazzampr/" target="_blank">About Us</a></li>
+                <li><a href="https://www.linkedin.com/in/mazzampr/" target="_blank" rel="noreferrer">About Us</a></li>
             </ul>
         `;
   }

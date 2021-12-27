@@ -70,64 +70,64 @@ top-menus {
 .top__resto {
     margin: 20px 0;
     padding: 0 20px;
-    .list__resto {
-        padding: 20px 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        .resto__item {
-            width: 300px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            margin: 0 10px 20px 0;
-            display: grid;
-            grid-template-rows: auto auto auto;
-            row-gap: 10px;
-            position: relative;
-            border-radius: 10px;
-            .img {
-                width: 100%;
-                height: 200px;
-            }
-            .title__resto {
-                text-align: center;
-                a {
-                    display: block;
-                    font-size: 20px;
-                    color: $primary-text;
-                    text-decoration: none;
-                    min-width: 44px;
-                    min-height: 44px;
-                    &:hover {
-                        color: $yellowdark;
-                    }
-                }
-            }
-            .description {
-                text-align: center;
-                color: $secondary-text;
-                font-weight: map-get($font-weights, medium);
-            }
-            .location {
-                display: flex;
-                padding: 20px 0 20px 10px;
-                .fa-map-marker-alt {
-                    color: $yellow;
-                }
-            }
-            .rating__resto {
-                text-align: center;
-                background-color: $yellow;
-                position: absolute;
-                border-radius: 0 10px 10px 0;
-                .gap {
-                    padding: 5px;
-                }
-            }
+    
+}
+.list__resto, #favoriteContainer {
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.resto__item {
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 10px 20px 0;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 10px;
+    position: relative;
+    border-radius: 10px;
+    .img {
+        width: 100%;
+        height: 200px;
+    }
+    .title__resto {
+        text-align: center;
+        a {
+            display: block;
+            font-size: 20px;
+            color: $primary-text;
+            text-decoration: none;
+            min-width: 44px;
+            min-height: 44px;
             &:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+                color: $yellowdark;
             }
         }
     }
+    .description {
+        text-align: center;
+        color: $secondary-text;
+        font-weight: map-get($font-weights, medium);
+    }
+    .location {
+        display: flex;
+        padding: 20px 0 20px 10px;
+        .fa-map-marker-alt {
+            color: $yellow;
+        }
+    }
+    .rating__resto {
+        text-align: center;
+        background-color: $yellow;
+        position: absolute;
+        border-radius: 0 10px 10px 0;
+        .gap {
+            padding: 5px;
+        }
+    }
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    }
 }
-

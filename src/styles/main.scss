@@ -32,6 +32,15 @@ body {
 main {
     min-height: 80vh;
 }
+// button
+.btn {
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    min-height: 44px;
+    min-width: 44px;
+}
+
 // line-bottom
 .line-bottom {
     
@@ -105,4 +114,23 @@ main {
     .img {
         width: 150px;
     }
+}
+
+.btn-like {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: $yellow;
+    padding: 15px;
+    &:hover {
+        cursor: pointer;
+        background-color: $yellowdark;
+    }
+    .love {
+        font-size: 28px;
+    }
+}
+
+.empty-favorite {
+    padding: 20px 20px;
 }

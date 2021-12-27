@@ -1,13 +1,8 @@
 .btn-top {
     background-color: $pinky;
-    border: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 44px;
-    height: 44px;
     &:hover {
         cursor: pointer;
         background-color: $pinkydark;

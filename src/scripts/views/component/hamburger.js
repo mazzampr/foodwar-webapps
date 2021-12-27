@@ -6,7 +6,7 @@ class HamburgerMenu extends HTMLElement {
 
   render() {
     this.innerHTML = `
-            <button class="hamburger" tabindex="0">
+            <button class="hamburger" tabindex="0" aria-label="hamburger button">
                 <ul>
                     <li class="line"></li>
                     <li class="line"></li>
