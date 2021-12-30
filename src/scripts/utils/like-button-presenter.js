@@ -3,9 +3,9 @@
 /* eslint-disable no-underscore-dangle */
 import FavoriteRestoIdb from '../data/favoriteresto-idb';
 
-const { createLikeButton, createLikedButton } = require('../views/templates/template-creator');
+const { createLikeRestoButton, createUnlikeRestoButton } = require('../views/templates/template-creator');
 
-const LikeButtonInitiator = {
+const LikeButtonPresenter = {
   async init({ likeButtonContainer, restaurant }) {
     this._likeButtonContainer = likeButtonContainer;
     this._restaurant = restaurant;
@@ -29,7 +29,7 @@ const LikeButtonInitiator = {
   },
 
   _renderLike() {
-    this._likeButtonContainer.innerHTML = createLikeButton();
+    this._likeButtonContainer.innerHTML = createLikeRestoButton();
 
     const likeButton = document.querySelector('#likeButton');
     likeButton.addEventListener('click', async () => {
@@ -40,7 +40,7 @@ const LikeButtonInitiator = {
   },
 
   _renderLiked() {
-    this._likeButtonContainer.innerHTML = createLikedButton();
+    this._likeButtonContainer.innerHTML = createUnlikeRestoButton();
 
     const likeButton = document.querySelector('#likeButton');
     likeButton.addEventListener('click', async () => {
@@ -51,4 +51,4 @@ const LikeButtonInitiator = {
   },
 };
 
-export default LikeButtonInitiator;
+export default LikeButtonPresenter;

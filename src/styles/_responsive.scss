@@ -5,7 +5,12 @@
     .btn-order {
         margin-top: 2em !important;
     }
-    
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        background-image: url('./images/hero-image_4-small.jpg') !important;
+    }
 }
 
 @media screen and (max-width: 768px) {

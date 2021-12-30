@@ -1,8 +1,6 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable no-undef */
 import RestaurantSource from '../../data/restaurant-resource';
 import urlParser from '../../routes/url-parser';
-import LikeButtonInitiator from '../../utils/like-button-initiator';
+import LikeButtonPresenter from '../../utils/like-button-presenter';
 import addReview from '../../utils/post-review';
 import '../component/loader';
 import { createDetailRestoTemplate, offlineMode } from '../templates/template-creator';
@@ -30,7 +28,7 @@ const Detail = {
       const data = await RestaurantSource.detailResto(url.id);
       detailContainer.innerHTML = createDetailRestoTemplate(data.restaurant);
       addReview.release(url);
-      LikeButtonInitiator.init({
+      LikeButtonPresenter.init({
         likeButtonContainer: document.querySelector('#likeButtonContainer'),
         restaurant: {
           id: data.restaurant.id,

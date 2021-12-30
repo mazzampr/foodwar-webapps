@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 class NavBar extends HTMLElement {
   connectedCallback() {
     this.render();

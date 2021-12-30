@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 class HamburgerMenu extends HTMLElement {
   connectedCallback() {
     this.render();

@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import FavoriteRestoIdb from '../../data/favoriteresto-idb';
 import '../component/loader';
 import { createRestoItemTemplate, EmptyFavoriteResto } from '../templates/template-creator';

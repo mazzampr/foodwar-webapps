@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import '../component/hero-element';
 import '../component/top-menu';
 import '../component/banner-promo';

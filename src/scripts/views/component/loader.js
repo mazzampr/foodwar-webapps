@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 class Loader extends HTMLElement {
   connectedCallback() {
     this.render();

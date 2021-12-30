@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 class BestRestaurants extends HTMLElement {
   connectedCallback() {
     this.render();

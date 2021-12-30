@@ -1,6 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable class-methods-use-this */
-/* eslint-disable no-underscore-dangle */
 class HeroElement extends HTMLElement {
   connectedCallback() {
     this.render();

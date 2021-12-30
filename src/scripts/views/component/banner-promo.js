@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 class BannerPromo extends HTMLElement {
   connectedCallback() {
     this.render();
@@ -7,7 +6,7 @@ class BannerPromo extends HTMLElement {
   render() {
     this.innerHTML = `
             <section class="banner__promo">
-                <img src="./images/banner.png" alt="">
+                <img src="./images/banner.jpg" alt="Banner Promo">
             </section>
         `;
   }

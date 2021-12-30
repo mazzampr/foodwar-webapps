@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 class Footer extends HTMLElement {
   connectedCallback() {
     this.render();

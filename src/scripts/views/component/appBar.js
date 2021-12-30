@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 class AppBar extends HTMLElement {
   connectedCallback() {
     this.render();

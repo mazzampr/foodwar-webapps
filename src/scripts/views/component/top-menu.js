@@ -1,7 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable class-methods-use-this */
-/* eslint-disable no-underscore-dangle */
-/* eslint-disable no-restricted-syntax */
 class TopMenu extends HTMLElement {
   constructor() {
     super();
@@ -48,20 +44,24 @@ class TopMenu extends HTMLElement {
     for (const menu of menus) {
       listItem += `
                 <div class="list__item" tabindex="0">
-                    <img src="${menu.image}" width="250px"
+                    <img src="${menu.image}" width="200px" height="200px"
                         alt="${menu.title}">
                     <h3 class="title__item" tabindex="0">${menu.title}</h3>
                     <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        ${this.loopingStar()}
                     </div>
                 </div>
             `;
     }
     return listItem;
+  }
+
+  loopingStar() {
+    let star = '';
+    for (let i = 0; i < 5; i++) {
+      star += '<img class="star" src="./images/icons/star-solid.svg">';
+    }
+    return star;
   }
 }
 

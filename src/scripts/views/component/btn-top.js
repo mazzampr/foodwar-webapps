@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable class-methods-use-this */
 class BtnTop extends HTMLElement {
   connectedCallback() {
     this.render();
@@ -7,7 +5,7 @@ class BtnTop extends HTMLElement {
 
   render() {
     this.innerHTML = `
-            <button class="btn btn-top" aria-label="Scroll Top"><i class="fas fa-arrow-up arrow"></i></button>
+            <button class="btn btn-top" aria-label="Scroll Top"><img class="arrow" src="./images/icons/arrow.svg"></button>
         `;
     window.addEventListener('scroll', this.scrollFuntion);
     document.querySelector('.btn-top').addEventListener('click', this.topScroll);

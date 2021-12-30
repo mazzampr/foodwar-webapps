@@ -1,21 +1,18 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable import/no-extraneous-dependencies */
-import '@fortawesome/fontawesome-free';
 import CONFIG from '../../globals/config';
 
 const createRestoItemTemplate = (restaurant) => `
     <div class="resto__item" tabindex="0">
-        <img class="img" src="${CONFIG.BASE_IMAGE_MEDIUM + restaurant.pictureId}"
+        <img class="img lazyload" src="./images/placeholder.svg" data-src="${CONFIG.BASE_IMAGE_SMALL + restaurant.pictureId}"
             width="300px" alt="${restaurant.name}">
         <h3 class="title__resto"><a href="${`/#/detail/${restaurant.id}`}" tabindex="0">${restaurant.name}</a></h3>
         <p class="description">Our Best Restaurant</p>
         <div class="location">
-            <i class="fas fa-map-marker-alt"></i>
+            <img class="marker" src="./images/icons/marker-solid.svg">
             <p tabindex="0">${restaurant.city}</p>
         </div>
         <div class="rating__resto">
             <div class="gap">
-                <span><i class="fas fa-star"></i></span>
+                <span><img class="star" src="./images/icons/star-solid.svg"></i></span>
                 <p>${restaurant.rating}</p>
             </div>
         </div>
@@ -23,12 +20,12 @@ const createRestoItemTemplate = (restaurant) => `
 
 const createDetailRestoTemplate = (restaurant) => `
     <div class="detail-header">
-        <div class="image-resto"><img src="${CONFIG.BASE_IMAGE_LARGE + restaurant.pictureId}" alt="${restaurant.name}"></div>
+        <div class="image-resto"><img class="lazyload" src="./images/placeholder.svg" data-src="${CONFIG.BASE_IMAGE_MEDIUM + restaurant.pictureId}" alt="${restaurant.name}"></div>
         <div class="branding">
             <h1 tabindex="0">${restaurant.name}</h1>
-            <p tabindex="0"><i class="fas fa-map-marker-alt"></i> ${restaurant.city}</p>
-            <p tabindex="0"><i class="fas fa-road"></i> ${restaurant.address}</p>
-            <p tabindex="0"><i class="fas fa-star"></i> ${restaurant.rating}</p>
+            <p tabindex="0"><img class="road" src="./images/icons/road-solid.svg"> ${restaurant.city}</p>
+            <p tabindex="0"><img class="marker" src="./images/icons/marker-solid.svg"> ${restaurant.address}</p>
+            <p tabindex="0"><img class="star" src="./images/icons/star-solid.svg"> ${restaurant.rating}</p>
             <hr class="line-border">
             <div class="categories">
                 <p>Category :</p>
@@ -94,14 +91,14 @@ const createReviewTemplate = (data) => {
   return dataReviewer;
 };
 
-const createLikeButton = () => `
-    <button aria-label="like this movie" id="likeButton" class="btn btn-like" aria-label="add to favorite">
-        <i class="far fa-heart love"></i>
+const createLikeRestoButton = () => `
+    <button id="likeButton" class="btn btn-like" aria-label="add to favorite">
+        <img class="love" src="./images/icons/heart-regular.svg">
     </button>`;
 
-const createLikedButton = () => `
-    <button aria-label="like this movie" id="likeButton" class="btn btn-like" aria-label="remove from favorite">
-        <i class="fas fa-heart love"></i>
+const createUnlikeRestoButton = () => `
+    <button id="likeButton" class="btn btn-like" aria-label="remove from favorite">
+        <img class="love" src="./images/icons/heart-solid.svg">
     </button>`;
 
 const offlineMode = () => `
@@ -112,8 +109,8 @@ const offlineMode = () => `
 
 const EmptyFavoriteResto = () => `
 <div class="empty-favorite">
-    <h3>Favorite Restaurant is still empty</h3>
-    <p>You must add your favorite restaurant!</p>
+    <h3 tabindex="0">Favorite Restaurant is still empty</h3>
+    <p tabindex="0">You must add your favorite restaurant!</p>
 </div>`;
 
 export {
@@ -121,7 +118,7 @@ export {
   createDetailRestoTemplate,
   createReviewTemplate,
   offlineMode,
-  createLikeButton,
-  createLikedButton,
+  createLikeRestoButton,
+  createUnlikeRestoButton,
   EmptyFavoriteResto,
 };
